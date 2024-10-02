@@ -1,0 +1,19 @@
+name: 'Dummy Custom Actions'
+description: 'Testing custom action'
+# inputs:
+#   bucket:
+#     description: 'S3 bucket name'
+#     required: true
+#   bucket-region:
+#     description: 'S3 bucket region name'
+#     required: false
+#     default: us-east-1
+#   dist-folder:
+#     description: 'The folder containing the deployable files'
+#     required: true
+# outputs:
+#   website-url:
+#     description: 'Website URL'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
