@@ -1,8 +1,11 @@
 name: 'Dummy Custom Actions'
 description: 'Testing custom action'
 inputs:
-  name:
-    description: 'Print name'
+  num1:
+    description: 'First Number'
+    required: true
+  num2:
+    description: 'Second Number'
     required: true
 #   bucket-region:
 #     description: 'S3 bucket region name'
@@ -11,9 +14,9 @@ inputs:
 #   dist-folder:
 #     description: 'The folder containing the deployable files'
 #     required: true
-# outputs:
-#   website-url:
-#     description: 'Website URL'
+outputs:
+  sum:
+    description: 'Sum of numbers'
 runs:
   using: 'docker'
   image: 'Dockerfile'
