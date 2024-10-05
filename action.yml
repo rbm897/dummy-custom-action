@@ -1,9 +1,9 @@
 name: 'Dummy Custom Actions'
 description: 'Testing custom action'
-# inputs:
-#   bucket:
-#     description: 'S3 bucket name'
-#     required: true
+inputs:
+  name:
+    description: 'Print name'
+    required: true
 #   bucket-region:
 #     description: 'S3 bucket region name'
 #     required: false

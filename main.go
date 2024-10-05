@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("Hello from Dummy Custom Actions")
+	name := os.Getenv("INPUT_name")
+	fmt.Printf("Name = %s", name)
 }
