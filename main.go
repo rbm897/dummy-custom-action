@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	name := os.Getenv("INPUT_name")
+	name := os.Getenv("INPUT_NAME")
 	fmt.Printf("Name = %s", name)
 }
