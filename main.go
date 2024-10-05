@@ -10,5 +10,5 @@ func main() {
 	num1, _ := strconv.Atoi(os.Getenv("INPUT_NUM1"))
 	num2, _ := strconv.Atoi(os.Getenv("INPUT_NUM2"))
 	sum := num1 + num2
-	fmt.Printf("sum=%d >> $GITHUB_OUTPUT", sum)
+	fmt.Printf("echo {sum}={%d} >> $GITHUB_OUTPUT", sum)
 }
